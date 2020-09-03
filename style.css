@@ -137,7 +137,6 @@ nav a:hover
 	display: inline-block;
 	border: 1px #F2F2F2 solid;
 	border-radius: 15px 0px 0px 15px;
-	background-position: relative;
 	background-color: #F2F2F2;
 	padding: 12px 17px 12px 17px;
 }
@@ -259,7 +258,7 @@ nav a:hover
 {
 	display: flex;
 	align-items: center;
-	margin-bottom: 18px;
+	margin-bottom: 22px;
 }
 .fa-info
 {
@@ -288,26 +287,27 @@ nav a:hover
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-around;
-	margin-bottom: 20px;
+	margin-bottom: 2%;
 }
 #hebergements article
 {
 	background-color: #F2F2F2;
-	max-width: 800px;
-	height: 600px;
+	width: 66%;
+	height: auto;
 	border-radius: 20px 20px 20px 20px;
-	margin-right: 1%;
-	margin-bottom: 35px;
+	margin-right: 2%;
+	margin-bottom: 45px;
+	padding: 2% 1% 2% 1%;
 }
 #hebergements article h2
 {
-	padding-left: 30px;
-	padding-top: 10px;
-	margin-bottom: 0px;
+	padding-left: 3%;
+	margin-top: 1%;
+	margin-bottom: 1%;
 }
 #affiche_plus
 {
-	padding-left: 30px;
+	padding-left: 3%;
 	font-family: ralewayextrabold, sans-serif;
 }
 .vignette                            /*VIGNETTE BLANCHE HEBERGEMENT*/
@@ -316,8 +316,9 @@ nav a:hover
 	flex-direction: column;
 	align-items: flex-start;
 	justify-content: flex-start;
-	max-width: 30%;
-	margin: 20px 20px 20px 20px;
+	width: 28%;
+	margin-top: 2%;
+	margin-bottom: 2%;
 	text-align: left;
 	padding: 5px 5px 15px 5px;
 	background-color: #FFFFFF;
@@ -330,22 +331,25 @@ a figure
 }
 .vignette p
 {
-	margin: 5px 0px 5px 0px;
+	margin: 5px 0px 8px 0px;
 	font-size: 0.9em;
-	padding-left: 10px;
+	padding-left: 6%;
 }
 figcaption
 {
-	padding-left: 10px;
+	padding-left: 6%;
 }
 .notes
 {
-	padding-left: 10px;
+	padding-left: 6%;
 	font-size: 0.9em;
 }
 #lieu_hebergement a figure img           /*PHOTOS HEBERGEMENTS MARSEILLE*/
 {
+	display: block;
 	border-radius: 15px 15px 0px 0px;
+	width: 100%;
+	margin-bottom: 8px;
 }
 
 /*///////////////////////////*/
@@ -357,54 +361,53 @@ figcaption
 	justify-content: space-between;
 	align-items: flex-start;
 }
-aside a img
-{
-	float: left;
-}
+
 aside
 {
-	width: 500px;
+	width: 32%;
 	background-color: #F2F2F2;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-around;
-	max-height: 600px;
+	height: auto;
 	border-radius: 20px 20px 20px 20px;
-	padding-bottom: 20px;
-	margin-bottom: 35px;
+	padding-bottom: 2%;
+	margin-bottom: 45px;
 }
 #head_aside h2
 {
 	padding-left: 40px;
-	padding-top: 20px;
-	margin-bottom: 10px;
-	margin-top: 10px;
+	margin-bottom: 3%;
+	margin-top: 5%;
 }
 #head_aside i
 {
-	padding-right: 10%;
-	padding-top: 20px; 
+	padding-right: 10%; 
 	font-size: 1.4em;
-	margin-bottom: 10px;
-	margin-top: 10px;
+	margin-bottom: 3%;
+	margin-top: 5%;
 }
 .vignette_aside
 {
-	max-width: 80%;
+	width: 84%;
+	height: auto;
 	background-color: #FFFFFF;
-	margin-left: 10%;
-	margin-bottom: 10px;
+	margin-left: 8%;
+	margin-bottom: 4%;
 	border-radius: 15px 15px 15px 15px;
 	box-shadow: 0px 0px 5px #F2F2F2;
 }
 .vignette_aside img
 {
+	float: left;
+	width: 33%;
+	height: 93%;
 	padding: 5px 20px 5px 5px;
 	border-radius: 15px 0px 0px 15px;
 }
 .img_title p
 {
-	margin: 5px 0px 30px 0px;
+	margin: 5px 0px 9% 0px;
 	font-size: 0.9em;
 }
 .img_title h3
@@ -433,18 +436,38 @@ aside
 	border-radius: 15px 15px 15px 15px;
 	box-shadow: 5px 5px 5px #F2F2F2;
 	padding-bottom: 10px;
-	margin-bottom: 35px;
+	margin-bottom: 50px;
+	width: 23%;
 }
 .vignette_activites figure img
 {
+	width: 100%;
+	height: auto;
 	border-radius: 15px 15px 0px 0px;
 	margin-bottom: 10px;
 }
-.vignette_activites_vertical
+.vignette_activ
+{
+	border-radius: 15px 15px 15px 15px;
+	box-shadow: 5px 5px 5px #F2F2F2;
+	padding-bottom: 10px;
+	margin-bottom: 50px;
+	width: 100%;
+	height: auto;
+}
+.vignette_activ figure img
+{
+	width: 100%;
+	height: auto;
+	border-radius: 15px 15px 0px 0px;
+	margin-bottom: 10px;
+}
+.vignette_activ_vertical
 {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
+	width: 23%;
 }
 
 /*/////////////////////////////////////////////////////////////////////////////*/
