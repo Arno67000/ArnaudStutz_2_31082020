@@ -72,7 +72,6 @@ span
 h1
 {
 	font-size: 1.4em;
-	font-weight: bolder;
 }
 /*///////////////////////////////*/
               /*NAV*/
@@ -179,12 +178,14 @@ nav a:hover
 #filtres
 {
 	display: flex;
+	justify-content: flex-start;
 	align-items: center;
 }
 #filtres p
 {
-	font-family: ralewaybold, sans-serif;
-	margin-right: 15px;
+	font-family: ralewayextrabold, sans-serif;
+	margin-right: 25px;
+	padding-left: 8px;
 }
 .fa-money-bill-wave                     /*icone billet*/
 {
@@ -236,9 +237,9 @@ nav a:hover
 	border-top: 2px #F2F2F2 solid;
 	border-bottom: 2px #F2F2F2 solid;
 	border-right: 2px #F2F2F2 solid;
-	margin: 10px 15px 10px 25px;
+	margin: 10px 20px 10px 15px;
 	border-radius: 25px 25px 25px 25px;
-	font-family: ralewaybold, sans-serif;
+	font-family: ralewayextrabold, sans-serif;
 	padding-right: 15px;
 	text-align: center;
 }     
@@ -259,6 +260,7 @@ nav a:hover
 	display: flex;
 	align-items: center;
 	margin-bottom: 22px;
+	padding-left: 4px;
 }
 .fa-info
 {
@@ -331,7 +333,8 @@ a figure
 }
 .vignette p
 {
-	margin: 5px 0px 8px 0px;
+	margin-top: 5px;
+	margin-bottom: 8px;
 	font-size: 0.9em;
 	padding-left: 6%;
 }
@@ -342,7 +345,7 @@ figcaption
 .notes
 {
 	padding-left: 6%;
-	font-size: 0.9em;
+	font-size: 0.8em;
 }
 #lieu_hebergement a figure img           /*PHOTOS HEBERGEMENTS MARSEILLE*/
 {
@@ -359,7 +362,7 @@ figcaption
 {
 	display: flex;
 	justify-content: space-between;
-	align-items: flex-start;
+	align-items: flex-end;
 }
 
 aside
@@ -376,20 +379,20 @@ aside
 }
 #head_aside h2
 {
-	padding-left: 40px;
-	margin-bottom: 3%;
-	margin-top: 5%;
+	padding-left: 8%;
+	margin-bottom: 4%;
+	margin-top: 6%;
 }
 #head_aside i
 {
-	padding-right: 10%; 
+	padding-right: 3%; 
 	font-size: 1.4em;
-	margin-bottom: 3%;
-	margin-top: 5%;
+	margin-bottom: 4%;
+	margin-top: 6%;
 }
 .vignette_aside
 {
-	width: 84%;
+	width: 89%;
 	height: auto;
 	background-color: #FFFFFF;
 	margin-left: 8%;
@@ -400,14 +403,15 @@ aside
 .vignette_aside img
 {
 	float: left;
-	width: 33%;
-	height: 93%;
+	min-width: 33%;
+	max-width: 33%;
+	height: auto;
 	padding: 5px 20px 5px 5px;
 	border-radius: 15px 0px 0px 15px;
 }
 .img_title p
 {
-	margin: 5px 0px 9% 0px;
+	margin: 5px 0px 5% 0px;
 	font-size: 0.9em;
 }
 .img_title h3
@@ -416,7 +420,7 @@ aside
 }
 .notes_aside
 {
-	font-size: 0.9em;
+	font-size: 0.8em;
 }
 
 /*////////////////////////////////*/
