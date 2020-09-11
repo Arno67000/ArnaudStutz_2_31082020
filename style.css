@@ -38,15 +38,16 @@ p
 {
 	font-family: ralewayregular, sans-serif;
 }
-figcaption
-{
-	font-family: ralewayextrabold, sans-serif;
-	font-weight: bolder;
-}
 h1, h2, h3
 {
 	font-family: ralewayextrabold, sans-serif;
 	font-weight: bolder;
+}
+h3
+{
+	margin-bottom: 0px;
+	margin-top: 0px;
+	padding-left: 4%;
 }
 header, main
 {
@@ -58,13 +59,17 @@ span
 	font-family: ralewaybold, sans-serif;
 	font-weight: bold;
 }
-.fa-star
+.fa-star             /*Etoiles bleues*/
 {
 	color: #0065FC;
 }
-.off
+.off                 /*Etoiles grises*/
 {
 	color: #F2F2F2;
+}
+.notes, .notes_aside /*Etoiles*/
+{
+	font-size: 0.8em;
 }
 /*////////////////////////////////////////////////////////////////////////////*/
                                    /*HEADER*/
@@ -76,10 +81,10 @@ h1
 /*///////////////////////////////*/
               /*NAV*/
 /*//////////////////////////////*/
-#menu
+nav
 {
 	display: flex;
-	align-items: center;
+	flex-wrap: nowrap;
 }
 nav a
 {
@@ -110,13 +115,17 @@ nav a:hover
 #en_tete
 {
 	display: flex;
-	justify-content: space-between;
+	justify-content: flex-end;
+	align-items: flex-start;
+	margin-bottom: 70px;
 }
 #logo
 {
-	margin-top: 50px;
-	width: 140px;
-	height: 60px;
+	margin-top: 30px;
+	position: absolute;
+	left: 5%;
+	width: 130px;
+	height: 50px;
 }
 /*///////////////////////////////////////////////////////////////////////////*/
                                  /*MAIN*/
@@ -171,7 +180,10 @@ nav a:hover
 	border: 1px #0065FC solid;
 	border-radius: 0px 15px 15px 0px; 
 }
-
+#bouton_phone
+{
+	display: none;
+}
 /*///////////////////////////////////*/
           /*LES FILTRES*/
 /*//////////////////////////////////*/
@@ -209,7 +221,7 @@ nav a:hover
 	border-radius: 25px 25px 25px 25px;
 	margin-right: 10px;
 }          
-.fa-heart                                /*icone coeur*/
+.fa-heart, .fa-dog                               /*icone coeur et chien*/
 {
 	position: relative;
 	bottom: 2px;
@@ -220,17 +232,6 @@ nav a:hover
 	border-radius: 25px 25px 25px 25px;
 	margin-right: 10px;
 }          
-.fa-dog                                  /*icone chien*/
-{
-	position: relative;
-	bottom: 2px;
-	left: -2px;
-	color: #0065FC;
-	background-color: #DEEBFF;
-	padding: 12px 12px 12px 12px;
-	border-radius: 25px 25px 25px 25px;
-	margin-right: 10px;
-}   
 #filtres a
 {
 	height: 36px;
@@ -325,29 +326,23 @@ nav a:hover
 	padding: 5px 5px 15px 5px;
 	background-color: #FFFFFF;
 	border-radius: 20px 20px 20px 20px;
-	box-shadow: 0px 0px 5px #F2F2F2;
+	box-shadow: 5px 5px 5px #F2F2F2;
 }
-a figure
+a picture
 {
 	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
 }
-.vignette p
+.vignette picture
 {
-	margin-top: 5px;
-	margin-bottom: 8px;
-	font-size: 0.9em;
-	padding-left: 6%;
+	padding: 0 1% 1% 1%;
 }
-figcaption
+.notes, .vignette p
 {
-	padding-left: 6%;
+	padding-left: 4%;
+	margin: 4px 0px 5px 0px;
 }
-.notes
-{
-	padding-left: 6%;
-	font-size: 0.8em;
-}
-#lieu_hebergement a figure img           /*PHOTOS HEBERGEMENTS MARSEILLE*/
+#lieu_hebergement a picture img           /*PHOTOS HEBERGEMENTS MARSEILLE*/
 {
 	display: block;
 	border-radius: 15px 15px 0px 0px;
@@ -390,6 +385,10 @@ aside
 	margin-bottom: 4%;
 	margin-top: 6%;
 }
+#head_aside i:hover
+{
+	color: #0065FC;
+}
 .vignette_aside
 {
 	width: 89%;
@@ -398,29 +397,32 @@ aside
 	margin-left: 8%;
 	margin-bottom: 4%;
 	border-radius: 15px 15px 15px 15px;
-	box-shadow: 0px 0px 5px #F2F2F2;
+	box-shadow: 5px 5px 5px #F2F2F2;
 }
 .vignette_aside img
 {
 	float: left;
 	min-width: 33%;
-	max-width: 33%;
+	max-width: 37%;
 	height: auto;
 	padding: 5px 20px 5px 5px;
 	border-radius: 15px 0px 0px 15px;
 }
+.img_title
+{
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+}
 .img_title p
 {
-	margin: 5px 0px 5% 0px;
+	margin: 5px 0px 25% 0px;
 	font-size: 0.9em;
 }
 .img_title h3
 {
-	margin-bottom: 0px;
-}
-.notes_aside
-{
-	font-size: 0.8em;
+	padding-top: 5px;
+	padding-left: 0%;
 }
 
 /*////////////////////////////////*/
@@ -443,7 +445,7 @@ aside
 	margin-bottom: 50px;
 	width: 23%;
 }
-.vignette_activites figure img
+.vignette_activites picture img, .vignette_activ picture img
 {
 	width: 100%;
 	height: auto;
@@ -459,13 +461,6 @@ aside
 	width: 100%;
 	height: auto;
 }
-.vignette_activ figure img
-{
-	width: 100%;
-	height: auto;
-	border-radius: 15px 15px 0px 0px;
-	margin-bottom: 10px;
-}
 .vignette_activ_vertical
 {
 	display: flex;
@@ -474,9 +469,9 @@ aside
 	width: 23%;
 }
 
-/*/////////////////////////////////////////////////////////////////////////////*/
+/*////////////////////////////////////////////////////////////////////////*/
                               /*FOOTER*/
-/*/////////////////////////////////////////////////////////////////////////////*/
+/*////////////////////////////////////////////////////////////////////////*/
 footer
 {
 	width: 100%;
@@ -518,4 +513,8 @@ footer a
 footer a:hover
 {
 	color: #0065FC;
+}
+footer h3
+{
+	padding: 8% 0 5% 0;
 }
