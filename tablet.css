@@ -28,6 +28,10 @@ header p
 {
 	padding-left: 0.5%;
 }
+.fa-map-marker-alt
+{
+	height: auto;
+}
 #filtres
 {
 	flex-wrap: wrap;
@@ -36,7 +40,7 @@ header p
 	align-items: flex-start;
 	justify-content: space-around;
 }
-#filtres a
+#filtres button
 {
 	margin: 10px 10px 10px 10px;
 	padding-right: 5px;

@@ -147,6 +147,7 @@ nav a:hover
 	border-radius: 15px 0px 0px 15px;
 	background-color: #F2F2F2;
 	padding: 12px 17px 12px 17px;
+	height: auto;
 }
 #text_area
 {
@@ -202,8 +203,8 @@ nav a:hover
 .fa-money-bill-wave                     /*icone billet*/
 {
 	position: relative;
-	bottom: 2px;
-	left: -2px;
+	bottom: 3px;
+	left: -12px;
 	color: #0065FC;
 	background-color: #DEEBFF;
 	padding: 12px 10px 12px 10px;
@@ -213,8 +214,8 @@ nav a:hover
 .fa-child                              /*icone enfant*/
 {
 	position: relative;
-	bottom: 2px;
-	left: -2px;
+	bottom: 3px;
+	left: -12px;
 	color: #0065FC;
 	background-color: #DEEBFF;
 	padding: 12px 14px 12px 14px;
@@ -224,27 +225,30 @@ nav a:hover
 .fa-heart, .fa-dog                               /*icone coeur et chien*/
 {
 	position: relative;
-	bottom: 2px;
-	left: -2px;
+	bottom: 3px;
+	left: -12px;
 	color: #0065FC;
 	background-color: #DEEBFF;
 	padding: 12px 12px 12px 12px;
 	border-radius: 25px 25px 25px 25px;
 	margin-right: 10px;
 }          
-#filtres a
+#filtres button
 {
+	display: flex;
 	height: 36px;
+	line-height: 36px;
+	background-color: #FFFFFF;
 	border-top: 2px #F2F2F2 solid;
 	border-bottom: 2px #F2F2F2 solid;
 	border-right: 2px #F2F2F2 solid;
 	margin: 10px 20px 10px 15px;
 	border-radius: 25px 25px 25px 25px;
 	font-family: ralewayextrabold, sans-serif;
+	font-size: 1em;
 	padding-right: 15px;
-	text-align: center;
 }     
-#filtres a:hover
+#filtres button:hover
 {
 	border-top: 2px #0065FC outset;
 	border-right: 2px #0065FC outset;
@@ -357,7 +361,7 @@ a picture
 {
 	display: flex;
 	justify-content: space-between;
-	align-items: flex-end;
+	align-items: center;
 }
 
 aside
@@ -378,14 +382,14 @@ aside
 	margin-bottom: 4%;
 	margin-top: 6%;
 }
-#head_aside i
+#head_aside .fa-chart-line
 {
-	padding-right: 3%; 
+	padding-right: 5%; 
 	font-size: 1.4em;
 	margin-bottom: 4%;
-	margin-top: 6%;
+	margin-top: 4%;
 }
-#head_aside i:hover
+#head_aside .fa-chart-line:hover
 {
 	color: #0065FC;
 }
