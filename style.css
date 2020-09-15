@@ -203,7 +203,7 @@ nav a:hover
 .fa-money-bill-wave                     /*icone billet*/
 {
 	position: relative;
-	bottom: 3px;
+	bottom: 4px;
 	left: -12px;
 	color: #0065FC;
 	background-color: #DEEBFF;
@@ -214,7 +214,7 @@ nav a:hover
 .fa-child                              /*icone enfant*/
 {
 	position: relative;
-	bottom: 3px;
+	bottom: 4px;
 	left: -12px;
 	color: #0065FC;
 	background-color: #DEEBFF;
@@ -225,7 +225,7 @@ nav a:hover
 .fa-heart, .fa-dog                               /*icone coeur et chien*/
 {
 	position: relative;
-	bottom: 3px;
+	bottom: 4px;
 	left: -12px;
 	color: #0065FC;
 	background-color: #DEEBFF;
